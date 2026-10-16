@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Frame | Aesthetic Custom Gifts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        if (window.tailwind) tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        beige: '#F5EFE6',
+                        blush: '#E8D5C8',
+                        dustyRose: '#D1B4A1',
+                        charcoal: '#3E3431',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            background: #FDFBF7;
+            color: #3E3431;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(circle at 15% 15%, #e8d5c850, transparent 30%),
+                radial-gradient(circle at 85% 65%, #d1b4a140, transparent 30%);
+            z-index: -1;
+        }
+        nav {
+            background: rgba(253,251,247,0.85);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(62, 52, 49, 0.03);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1.5px;
+            background: #D1B4A1;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -4px;
+            transition: 0.3s ease;
+        }
+        nav a:hover::after { width: 100%; }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .hero-content { animation: premiumFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        @keyframes premiumFadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        button, a { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .premium-product-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(62, 52, 49, 0.02);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(245, 239, 230, 0.7);
+            cursor: pointer;
+        }
+        .premium-product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 38px rgba(62, 52, 49, 0.08);
+            border-color: #E8D5C8;
+        }
+        .premium-card-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #FDFBF7;
+            aspect-ratio: 1 / 1;
+        }
+        .premium-card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .premium-product-card:hover .premium-card-image { transform: scale(1.06); }
+        .premium-card-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(62, 52, 49, 0.9);
+            backdrop-filter: blur(4px);
+            color: #FDFBF7;
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 500;
+            z-index: 10;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #F5EFE6; }
+        ::-webkit-scrollbar-thumb { background: #D1B4A1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #b58e78; }
+        @media(max-width:768px) {
+            nav img { height: 48px; }
+            h1 { font-size: 2.4rem !important; }
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { scrollbar-width: none; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <div class="bg-blush text-charcoal text-[10px] md:text-xs tracking-widest text-center py-2 px-4 font-medium uppercase">
+        ✨ Free shipping on orders over ₹999 | Handcrafted with Love
+    </div>
+
+    <nav class="sticky top-0 z-50 px-4 py-4 md:px-12 flex justify-between items-center border-b border-beige/40">
+        <div class="flex items-center gap-3 md:gap-5">
+            <a href="index.html" class="hover:opacity-90">
+                <img src="m.creation logo.jpeg" alt="Mansi Creation Logo" class="h-12 md:h-16 object-contain rounded-full">
+            </a>
+            <div class="flex flex-col">
+                <a href="#" class="font-serif text-lg md:text-2xl font-bold tracking-wide text-charcoal">MANSI CREATION</a>
+                <a href="#" class="font-serif text-[9px] md:text-xs italic tracking-wide text-dustyRose">Bloom & Frame | Aesthetic Custom Gifts</a>
+            </div>
+        </div>
+
+        <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide uppercase text-charcoal/80">
+            <a href="#" class="hover:text-dustyRose relative transition py-1">Home</a>
+            <a href="#shop" class="hover:text-dustyRose relative transition py-1">Shop</a>
+            <a href="#about" class="hover:text-dustyRose relative transition py-1">Our Story</a>
+            <a href="#contact" class="hover:text-dustyRose relative transition py-1">Contact</a>
+        </div>
+
+        <div class="flex items-center space-x-4 md:space-x-6 text-lg md:text-xl">
+            <button onclick="toggleCart()" class="relative p-1 hover:text-dustyRose transition duration-300 transform hover:scale-105">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count" class="absolute -top-1 -right-1 bg-dustyRose text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold shadow-sm">0</span>
+            </button>
+            <button class="md:hidden p-1 hover:text-dustyRose transition" onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-cream/98 backdrop-blur-lg flex flex-col justify-center items-center space-y-8 text-xl font-medium tracking-wider uppercase">
+        <button onclick="toggleMobileMenu()" class="absolute top-6 right-6 text-2xl hover:text-dustyRose transition"><i class="fa-solid fa-xmark"></i></button>
+        <a href="#" onclick="toggleMobileMenu()" class="hover:text-dustyRose transition">Home</a>
+        <a href="#shop" onclick="toggleMobileMenu()" class="hover:text-dustyRose transition">Shop</a>
+        <a href="#about" onclick="toggleMobileMenu()" class="hover:text-dustyRose transition">Our Story</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-dustyRose transition">Contact</a>
+    </div>
+
+    <section class="relative bg-beige/40 min-h-[60vh] md:min-h-[80vh] flex items-center px-6 md:px-16 py-12 overflow-hidden">
+        <div class="hero-content max-w-xl z-10 space-y-4 md:space-y-6">
+            <span class="text-[10px] md:text-xs font-semibold tracking-widest uppercase text-dustyRose bg-blush/30 px-3 py-1 rounded-full inline-block">Handcrafted Elegance</span>
+            <h1 class="font-serif text-4xl md:text-6xl text-charcoal leading-tight">Preserving moments, blooming smiles.</h1>
+            <p class="text-charcoal/70 leading-relaxed text-xs md:text-base">Explore our thoughtfully curated collection of premium custom photo frames and ethereal, fresh bouquets designed to bring warmth to your favorite spaces.</p>
+            <div class="pt-2">
+                <a href="#shop" class="bg-charcoal text-cream hover:bg-dustyRose px-8 py-3.5 text-xs uppercase tracking-widest transition duration-300 inline-block shadow-md hover:shadow-lg rounded-sm transform hover:-translate-y-0.5">Explore Collections</a>
+            </div>
+        </div>
+        <div class="absolute right-0 bottom-0 top-0 w-1/2 hidden md:block bg-cover bg-center opacity-90 rounded-l-[40px] shadow-2xl" style="background-image: url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1200&auto=format&fit=crop');"></div>
+    </section>
+
+    <section id="shop" class="max-w-7xl mx-auto px-4 py-16 md:py-24 reveal">
+        <div class="text-center max-w-lg mx-auto mb-8 md:mb-16">
+            <h2 class="font-serif text-2xl md:text-4xl text-charcoal mb-2 md:mb-4">Our Curated Collections</h2>
+            <div class="h-[1px] w-16 bg-dustyRose mx-auto mb-3"></div>
+            <p class="text-charcoal/60 text-xs md:text-sm">Filter by main category and find the perfect piece crafted uniquely for your special occasion.</p>
+        </div>
+
+        <div class="flex overflow-x-auto no-scrollbar gap-2 pb-4 mb-6 md:mb-12 justify-start md:justify-center px-2">
+            <button onclick="filterCategory('all', event)" class="cat-btn flex-shrink-0 bg-charcoal text-cream px-5 py-2 rounded-full border border-charcoal text-[11px] tracking-widest uppercase transition">All</button>
+            <button onclick="filterCategory('frames', event)" class="cat-btn flex-shrink-0 px-5 py-2 rounded-full border border-beige bg-cream text-[11px] tracking-widest uppercase hover:border-charcoal transition">Photo Frames</button>
+            <button onclick="filterCategory('bouquets', event)" class="cat-btn flex-shrink-0 px-5 py-2 rounded-full border border-beige bg-cream text-[11px] tracking-widest uppercase hover:border-charcoal transition">Bouquets</button>
+             <button onclick="filterCategory('Artificial', event)" class="cat-btn flex-shrink-0 px-5 py-2 rounded-full border border-beige bg-cream text-[11px] tracking-widest uppercase hover:border-charcoal transition">Artificial</button>
+            <button onclick="filterCategory('magazines', event)" class="cat-btn flex-shrink-0 px-5 py-2 rounded-full border border-beige bg-cream text-[11px] tracking-widest uppercase hover:border-charcoal transition">Magazines</button>
+            <button onclick="filterCategory('handcrafted', event)" class="cat-btn flex-shrink-0 px-5 py-2 rounded-full border border-beige bg-cream text-[11px] tracking-widest uppercase hover:border-charcoal transition">Handcrafted</button>
+            <button onclick="filterCategory('cards', event)" class="cat-btn flex-shrink-0 px-5 py-2 rounded-full border border-beige bg-cream text-[11px] tracking-widest uppercase hover:border-charcoal transition">Cards</button>
+           
+        </div>
+
+        <div class="flex justify-center mb-6 text-[10px] md:text-xs text-charcoal/60 font-medium tracking-wide text-center">
+            <span class="bg-beige/30 px-4 py-1.5 rounded-full border border-beige/60">✨ Sub-collections: Personalized, Minimalist, Seasonal Fresh, Dried Botanicals</span>
+        </div>
+
+        <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6"></div>
+    </section>
+
+    <section id="about" class="bg-beige/30 py-16 md:py-24 px-6 reveal">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="h-[280px] md:h-[420px] bg-cover bg-center shadow-lg rounded-2xl transition-transform duration-500 hover:scale-[1.02]" style="background-image: url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80');"></div>
+            <div class="space-y-4 md:space-y-6">
+                <span class="text-[10px] md:text-xs font-semibold tracking-widest uppercase text-dustyRose">Our Story</span>
+                <h2 class="font-serif text-2xl md:text-4xl text-charcoal">Made with care, delivered with warmth.</h2>
+                <p class="text-charcoal/70 text-xs md:text-sm leading-relaxed">At Bloom & Frame, we believe that every memory deserves a beautiful border, and every sentiment is best expressed through nature's finest colors. Our pieces are locally sourced, sustainably packaged, and curated delicately to bring comfort and premium design directly to your doorstep.</p>
+                <div class="border-l-2 border-dustyRose pl-4 italic text-charcoal/80 text-xs md:text-sm">
+                    "Artistry is not just what we make, but how we make you feel."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 max-w-5xl mx-auto px-4 text-center reveal">
+        <h2 class="font-serif text-2xl md:text-3xl text-charcoal mb-8 md:mb-12">Shared Moments</h2>
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+            <div class="bg-white p-6 md:p-8 rounded-xl border border-beige/60 shadow-sm hover:shadow-md transition">
+                <div class="text-dustyRose text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-xs md:text-sm italic text-charcoal/80">"The Walnut Gallery frame felt so premium. It completely transformed my wedding portrait. Highly recommend!"</p>
+                <p class="text-[10px] tracking-wider uppercase font-semibold text-charcoal/50 mt-4">— Eleanor R.</p>
+            </div>
+            <div class="bg-white p-6 md:p-8 rounded-xl border border-beige/60 shadow-sm hover:shadow-md transition">
+                <div class="text-dustyRose text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-xs md:text-sm italic text-charcoal/80">"Stunning arrangement! The blush pastel bouquet smelled amazing and lasted well over a week. Perfect gift."</p>
+                <p class="text-[10px] tracking-wider uppercase font-semibold text-charcoal/50 mt-4">— Clara M.</p>
+            </div>
+            <div class="bg-white p-6 md:p-8 rounded-xl border border-beige/60 shadow-sm hover:shadow-md transition">
+                <div class="text-dustyRose text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-xs md:text-sm italic text-charcoal/80">"Customer service via WhatsApp was so responsive. They customized my frame size flawlessly."</p>
+                <p class="text-[10px] tracking-wider uppercase font-semibold text-charcoal/50 mt-4">— Liam T.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-charcoal text-cream py-16 md:py-20 px-6 text-center reveal">
+        <div class="max-w-xl mx-auto space-y-4 md:space-y-6">
+            <h2 class="font-serif text-2xl md:text-4xl">Have a custom request?</h2>
+            <p class="text-cream/70 text-xs md:text-sm leading-relaxed">Whether you need specific dimensions for an art frame or a bespoke floral arrangement for an event, we're happy to chat via WhatsApp for instant personalization.</p>
+            <div class="pt-2">
+                <a href="https://wa.me/917028755897" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3.5 inline-flex items-center space-x-3 transition rounded-full text-xs md:text-sm font-semibold tracking-wider uppercase shadow-lg transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chat on WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-cream shadow-2xl z-50 transform translate-x-full transition-transform duration-500 flex flex-col">
+        <div class="p-6 border-b border-beige flex justify-between items-center">
+            <h3 class="font-serif text-xl text-charcoal font-semibold">Your Shopping Bag</h3>
+            <button onclick="toggleCart()" class="text-xl hover:text-dustyRose transition"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4">
+            <p class="text-sm text-charcoal/50 text-center py-8">Your cart is empty.</p>
+        </div>
+        <div class="p-6 border-t border-beige bg-beige/20 space-y-4">
+            <div class="flex justify-between font-serif text-lg text-charcoal font-semibold">
+                <span>Total:</span>
+                <span id="cart-total">₹0.00</span>
+            </div>
+            <div class="space-y-2.5">
+                <input type="text" id="customer-name" placeholder="Your Name" class="w-full bg-white border border-blush/60 p-3 rounded text-xs focus:outline-none focus:border-dustyRose transition">
+                <input type="tel" id="customer-phone" placeholder="Mobile Number" class="w-full bg-white border border-blush/60 p-3 rounded text-xs focus:outline-none focus:border-dustyRose transition">
+                <textarea id="customer-address" placeholder="Delivery Address" rows="3" class="w-full bg-white border border-blush/60 p-3 rounded text-xs focus:outline-none focus:border-dustyRose transition"></textarea>
+            </div>
+            <div class="space-y-2">
+                <label class="text-xs uppercase font-medium tracking-wider text-charcoal/60 block">Select Payment Mode</label>
+                <select id="payment-method" class="w-full bg-white border border-blush/60 text-xs p-3 rounded focus:outline-none focus:border-dustyRose transition">
+                    <option value="Online">Online (UPI, Cards, NetBanking)</option>
+                    <option value="COD">Cash on Delivery (COD)</option>
+                    <option value="Bank">Direct Bank Transfer</option>
+                </select>
+            </div>
+            <button onclick="checkoutOrder()" class="w-full bg-charcoal text-cream py-3.5 text-xs uppercase tracking-widest hover:bg-dustyRose transition rounded font-medium shadow-md">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center z-50 p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white max-w-3xl w-full p-5 md:p-8 rounded-2xl relative max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300">
+            <button onclick="closeProduct()" class="absolute top-4 right-4 text-2xl text-gray-400 hover:text-black transition z-10">×</button>
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                <div class="relative overflow-hidden rounded-xl bg-cream">
+                    <img id="modal-img" class="w-full h-[260px] md:h-[380px] object-cover rounded-xl" src="" alt="">
+                </div>
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h2 id="modal-name" class="font-serif text-xl md:text-3xl mb-1 text-charcoal font-semibold"></h2>
+                        <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="text-charcoal/50 ml-1">(4.9 rating)</span>
+                        </div>
+                        <p id="modal-price" class="text-2xl font-bold mb-4 text-charcoal"></p>
+                        <div class="h-[1px] w-full bg-beige mb-4"></div>
+                        <p class="text-[10px] uppercase font-semibold text-dustyRose tracking-wider mb-1">About Product</p>
+                        <p id="modal-about" class="text-gray-600 leading-relaxed text-xs md:text-sm"></p>
+                    </div>
+                    <div class="mt-6 space-y-2.5">
+                        <div class="flex gap-3">
+                            <button id="modal-cart-btn" class="w-1/2 border border-charcoal text-charcoal hover:bg-beige py-3 rounded uppercase tracking-widest text-[10px] font-semibold transition">
+                                <i class="fa-solid fa-bag-shopping mr-1"></i>Add To Bag
+                            </button>
+                            <button id="modal-buy-btn" class="w-1/2 bg-charcoal text-cream hover:bg-dustyRose py-3 rounded uppercase tracking-widest text-[10px] font-semibold transition">
+                                Buy Now
+                            </button>
+                        </div>
+                        <a id="modal-whatsapp-btn" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded uppercase tracking-widest text-[10px] font-semibold transition flex items-center justify-center gap-2 shadow">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-cream border-t border-beige/60 py-8 text-center text-[10px] text-charcoal/50 tracking-wider">
+        <p>&copy; 2026 Bloom & Frame. Designed beautifully for your cherished moments.</p>
+    </footer>
+
+    <script>
+        // ✅ BUG FIX 1: EmailJS initialization
+     if (window.emailjs) {
+    emailjs.init("qK9y044BFxQFhpx56");
+}
+
+        // ✅ BUG FIX 2: products हे proper JS objects आहेत आता (HTML नाही)
+        // तुम्ही खाली तुमचे products add करा — हे sample products आहेत
+        const products = [
+{
+    id: 1,
+    name: "Royal Red Rose Bouquet",
+    price: 699,
+    category: "bouquets",
+    img: "bouquet1.jpg",
+    badge: "Bestseller",
+    about: "A luxurious handcrafted red rose bouquet perfect for birthdays, anniversaries, and special celebrations. Wrapped in premium paper and designed elegantly."
+},
+
+{
+    id: 2,
+    name: "Classic Walnut Frame",
+    price: 499,
+    category: "frames",
+    img: "frame1.jpeg",
+    badge: "Premium",
+    about: "Premium quality walnut wood frame designed to keep your special family or wedding memories preserved with an elegant minimalist look."
+},
+
+{
+    id: 3,
+    name: " A4 Aesthetic Magazine",
+    price: 599,  
+    category: "magazines",
+    img: "magzine1.jpg",
+    badge: "Trending",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 4,
+    name: "Personalized Greeting Card",
+    price: 499,
+    category: "handcrafted",
+    img: "greeting card.jpg",
+    badge: "Handmade",
+    about: "A beautifully handcrafted greeting card that can be personalized with your own message and design, perfect for any occasion to show your love."
+},
+
+{
+    id: 5,
+    name: "Butterfly Aesthetic Card",
+    price: 299,
+    category: "cards",
+    img: "cards1.jpg",
+    badge: "Popular",
+    about: "Our Basic Design Editing service is available for ₹300–₹500, while Custom Premium Design starts from ₹600–₹1,000, depending on the complexity of the artwork. Printing charges vary based on the quantity ordered. For 100 cards, the cost is approximately ₹600–₹900; 200 cards cost around ₹1,100–₹1,600; 500 cards are priced between ₹2,400–₹3,500; and 1,000 cards range from ₹4,500–₹6,500. Final pricing may vary depending on the paper quality, GSM, finish, lamination, and custom die-cut requirements."
+},
+
+{
+    id: 6,
+    name: "Pink Elegance Bouquet",
+    price: 799,
+    category: "bouquets",
+    img: "bouquet2.jpg",
+    badge: "Trending",
+    about: "A beautifully crafted pink rose bouquet, perfect for expressing love, grace, and affection on special occasions."
+},
+
+{
+    id: 7,
+    name: "Premium Walnut Frame",
+    price: 449,
+    category: "frames",
+    img: "frame2.jpeg",
+    badge: "Elegant",
+    about: "High-quality walnut wood frame designed to showcase your cherished couple or wedding photographs with a warm finish."
+},
+
+{
+    id: 8,
+    name: "Personalized Vogue Birthday Magazine",
+    price: 599,
+    category: "magazines",
+    img: "magzine2.jpg",
+    badge: "Bestseller",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 9,
+    name: "Handmade Love Card",
+    price: 499,
+    category: "handcrafted",
+    img: "greeting card2.jpg",
+    badge: "Handmade",
+    about: "A personalized heartfelt card made carefully by hand, offering a lovely way to share warm messages with someone special."
+},
+
+{
+    id: 10,
+    name: "Floral Welcome Invitation",
+    price: 299,
+    category: "cards",
+    img: "cards2.jpg",
+    badge: "Premium",
+    about: "Our Basic Design Editing service is available for ₹300–₹500, while Custom Premium Design starts from ₹600–₹1,000, depending on the complexity of the artwork. Printing charges vary based on the quantity ordered. For 100 cards, the cost is approximately ₹600–₹900; 200 cards cost around ₹1,100–₹1,600; 500 cards are priced between ₹2,400–₹3,500; and 1,000 cards range from ₹4,500–₹6,500. Final pricing may vary depending on the paper quality, GSM, finish, lamination, and custom die-cut requirements."
+},
+
+{
+    id: 11,
+    name: "Seasonal Fresh Bouquet",
+    price: 999,
+    category: "bouquets",
+    img: "bouquet3.jpg",
+    badge: "Fresh Pick",
+    about: "A vibrant arrangement featuring the season's finest fresh flowers, beautifully bundled to bring joy and natural color to any room."
+},
+
+{
+    id: 12,
+    name: "Elegant Minimalist Frame",
+    price: 449,
+    category: "frames",
+    img: "frame3.jpeg",
+    badge: "Premium",
+    about: "An elegant walnut wood frame designed to preserve your favorite memories with a timeless and sophisticated border."
+},
+
+{
+    id: 13,
+    name: "Graduation Memory Magazine",
+    price: 599,
+    category: "magazines",
+    img: "magzine3.jpg",
+    badge: "Popular",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 14,
+    name: "Customized Keepsake Card",
+    price: 499,
+    category: "handcrafted",
+    img: "greeting card3.jpg",
+    badge: "Handmade",
+    about: "Express your truest feelings with this customizable aesthetic card, beautifully styled for milestones and birthdays."
+},
+
+{
+    id: 15,
+    name: "Minimalist Pastel Greeting",
+    price: 329,
+    category: "cards",
+    img: "cards3.jpg",
+    badge: "Aesthetic",
+    about: "Our Basic Design Editing service starts at ₹300–₹600, while Premium Custom Design is available for ₹700–₹1,200, depending on the layout, QR code integration, social media icons, and custom branding requirements. Printing charges depend on the quantity and paper quality. 100 prints cost approximately ₹500–₹800, 200 prints cost ₹900–₹1,400, 500 prints cost ₹2,000–₹3,000, and 1,000 prints cost ₹3,800–₹5,800. Final pricing may vary based on paper GSM, matte/gloss finish, lamination, and premium printing options."
+},
+
+{
+    id: 16,
+    name: "Midnight Chocolate Bouquet",
+    price: 1499,
+    category: "bouquets",
+    img: "bouquet4.jpg",
+    badge: "Luxury",
+    about: "A decadent luxury bouquet featuring a wonderful mix of gourmet chocolates and artistic wraps, perfect for the ultimate surprise."
+},
+
+{
+    id: 17,
+    name: "Rustic Desktop Wood Frame",
+    price: 249,
+    category: "frames",
+    img: "frame4.jpeg",
+    badge: "Rustic",
+    about: "A rustic walnut wood frame designed to give your cherished moments a cozy, warm, and delightfully natural look."
+},
+
+{
+    id: 18,
+    name: "Vogue Birthday Edition Magazine",
+    price: 599,
+    category: "magazines",
+    img: "magzine4.jpg",
+    badge: "Trending",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 19,
+    name: "Elegant Handcrafted Wish Card",
+    price: 599,
+    category: "handcrafted",
+    img: "greeting card4.jpg",
+    badge: "Handmade",
+    about: "Carefully handcrafted with fine materials, this card adds a personal touch to your blessings, congratulations, and wishes."
+},
+
+{
+    id: 20,
+    name: "Floral QR Code Business Card",
+    price: 329,
+    category: "cards",
+    img: "cards4.jpg",
+    badge: "Modern",
+    about: "Our Basic Design Editing service is available for ₹300–₹500, while Premium Custom Design ranges from ₹600–₹1,000, depending on the design complexity, QR code setup, social media icons, branding, and custom layout requirements. Printing charges vary based on the order quantity and paper quality. 100 cards cost approximately ₹350–₹600, 200 cards cost ₹650–₹1,000, 500 cards cost ₹1,500–₹2,400, and 1,000 cards cost ₹2,800–₹4,500. Final pricing may vary depending on paper GSM, matte or glossy finish, lamination, and premium printing options."
+},
+
+{
+    id: 21,
+    name: "Celebration Treat Candy Bouquet",
+    price: 949,
+    category: "bouquets",
+    img: "bouquet5.jpg",
+    badge: "Popular",
+    about: "A delightful combination of decorative elements and premium sweet treats, ideal for grand milestones or celebrations."
+},
+
+{
+    id: 22,
+    name: "Wedding Anniversary Gallery Frame",
+    price: 449,
+    category: "frames",
+    img: "Anniversary Frame.jpg",
+    badge: "Bestseller",
+    about: "A premium walnut frame specifically designed to capture the beauty of your marriage anniversary and wedding vows."
+},
+
+{
+    id: 23,
+    name: "Memories Milestone Magazine",
+    price: 599,
+    category: "magazines",
+    img: "magzine5.jpg",
+    badge: "Customizable",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 24,
+    name: "Floral Heart Handcrafted Card",
+    price: 499,
+    category: "handcrafted",
+    img: "greeting card5.jpg",
+    badge: "Gift Special",
+    about: "Featuring delicate floral patterns, this handmade card is a sweet and gentle way to say thank you or show appreciation."
+},
+
+{
+    id: 25,
+    name: "Premium Rounded Corner QR Code Business Card",
+    price: 349,
+    category: "cards",
+    img: "cards5.jpg",
+    badge: "Elegant",
+    about: "Our Basic Design Editing service is available for ₹350–₹600, while Premium Custom Design ranges from ₹700–₹1,200, depending on the level of customization, QR code integration, logo placement, typography, and branding elements. Printing charges vary based on the quantity and card specifications. 100 cards cost approximately ₹500–₹800, 200 cards cost ₹900–₹1,400, 500 cards cost ₹2,000–₹3,200, and 1,000 cards cost ₹3,800–₹5,800. Final pricing may vary depending on the paper GSM, matte or velvet lamination, rounded corner die-cutting, spot UV, and other premium finishing options."
+},
+{
+    id: 26,
+    name: "Scarlet Love Romance Bouquet",
+    price: 999,
+    category: "bouquets",
+    img: "bouquet6.jpg",
+    badge: "Romantic",
+    about: "An intense and romantic bouquet featuring rich scarlet themes and beautiful wraps, designed to make hearts melt."
+},
+
+{
+    id: 27,
+    name: "Vintage Couple Collage Frame",
+    price: 499,
+    category: "frames",
+    img: "Married Couple.jpg",
+    badge: "Premium",
+    about: "A vintage-inspired walnut wood frame curated to beautifully display romantic portraits of couples with timeless grace."
+},
+
+{
+    id: 28,
+    name: "Forever Together Magazine",
+    price: 599,
+    category: "magazines",
+    img: "magzine6.jpg",
+    badge: "Bestseller",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 29,
+    name: "Aesthetic Border Greeting Card",
+    price: 299,
+    category: "handcrafted",
+    img: "greeting card6.jpg",
+    badge: "Handmade",
+    about: "A clean, border-designed handmade card that elegantly frames your personalized notes and warm holiday wishes."
+},
+
+{
+    id: 30,
+    name: "Mini Square QR Code Business Card",
+    price: 299,
+    category: "cards",
+    img: "cards6.jpg",
+    badge: "Luxury",
+    about: "Our Basic Design Editing service is available for ₹300–₹500, while Premium Custom Design ranges from ₹600–₹1,000, depending on the complexity of the design, logo creation, QR code integration, and branding elements. Printing charges vary according to the quantity and paper quality. 100 cards cost approximately ₹450–₹700, 200 cards cost ₹800–₹1,200, 500 cards cost ₹1,800–₹2,800, and 1,000 cards cost ₹3,500–₹5,200. Final pricing may vary based on premium cardstock, matte or soft-touch lamination, foil stamping, spot UV, and other finishing options."
+},
+
+{
+    id: 31,
+    name: "Chocolate & Sweet Memories Bouquet",
+    price: 1199,
+    category: "bouquets",
+    img: "bouquet7.jpg",
+    badge: "Popular",
+    about: "A wonderful gift featuring chocolate layers curated alongside nostalgic elements, making it an incredible birthday surprise."
+},
+
+{
+    id: 32,
+    name: "Modern Contemporary Walnut Frame",
+    price: 549,
+    category: "frames",
+    img: "frame5.jpg",
+    badge: "Modern",
+    about: "A contemporary sleek walnut wood frame crafted perfectly to add an artistic look to your living room walls or office desk."
+},
+
+{
+    id: 33,
+    name: "Luxury Cover Star Magazine",
+    price: 599,
+    category: "magazines",
+    img: "magzine7.jpg",
+    badge: "Trending",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 34,
+    name: "10 Handmade Celebration  Card",
+    price: 599,
+    category: "handcrafted",
+    img: "greeting card7.jpg",
+    badge: "Handmade",
+    about: "Our handcrafted Mini Message Cards are a perfect way to add a heartfelt touch to any gift. Available as a single card for ₹59, a set of 5 cards for ₹229, 10 cards for ₹399, or a 13-card gift set for ₹499. Looking for something more personal? Create your own fully customized message card set for ₹599. Thoughtfully designed to make every moment extra special."
+},
+
+{
+    id: 35,
+    name: "Custom QR Code Boutique Business Card",
+    price: 299,
+    category: "cards",
+    img: "cards7.jpg",
+    badge: "Premium",
+    about: "Our Basic Design Editing service is available for ₹300–₹500, while Premium Custom Design ranges from ₹600–₹1,000, depending on the level of customization, logo placement, QR code integration, social media details, and brand styling. Printing charges vary according to the order quantity and paper quality. 100 cards cost approximately ₹400–₹650, 200 cards cost ₹750–₹1,150, 500 cards cost ₹1,700–₹2,600, and 1,000 cards cost ₹3,200–₹4,800. Final pricing may vary depending on the paper GSM, matte or glossy finish, lamination, spot UV, foil printing, and other premium finishing options."
+},
+
+{
+    id: 36,
+    name: "Golden Memories Polaroid Bouquet",
+    price: 649,
+    category: "bouquets",
+    img: "bouquet8.jpg",
+    badge: "Unique",
+    about: "A highly creative custom bouquet holding tiny polaroid photos instead of flowers. A truly unique and heartwarming way to gift memories."
+},
+
+{
+    id: 37,
+    name: "Walnut Portrait Frame",
+    price: 549,
+    category: "frames",
+    img: "frame7.jpg",
+    badge: "Elegant",
+    about: "A sophisticated dark walnut wood frame built with crisp margins to cleanly emphasize your most beloved portrait photographs."
+},
+
+{
+    id: 38,
+    name: "Our Love Story Couple's Magazine",
+    price: 599,
+    category: "magazines",
+    img: "magazine10.jpg",
+    badge: "Romantic",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 39,
+    name: " 10 Aesthetic Kraft Handcrafted Card",
+    price: 399,
+    category: "handcrafted",
+    img: "greeting card8.jpg",
+    badge: "Handmade",
+    about: "AOur Cute Pun Mini Cards are the sweetest way to express your feelings with a touch of humor. Featuring adorable illustrations and playful messages, they're perfect for birthdays, anniversaries, Valentine's Day, friendship gifts, or just because. Available as a single card for ₹59, a set of 5 for ₹229, a set of 10 for ₹399, or a 13-card gift set for ₹499. Want something unique? Get a fully customized set for ₹599 and make every message truly unforgettable."
+},
+
+{
+    id: 40,
+    name: "Premium Salon & Beauty QR Code Business Card",
+    price: 349,
+    category: "cards",
+    img: "cards8.jpg",
+    badge: "Minimal",
+    about: "Our Basic Design Editing service starts at ₹350–₹600, while Premium Custom Design ranges from ₹700–₹1,200, depending on the complexity of the layout, QR code integration, coupon design, branding, and custom typography. Printing charges vary based on the quantity and paper quality. 100 cards cost approximately ₹450–₹750, 200 cards cost ₹850–₹1,300, 500 cards cost ₹1,900–₹3,000, and 1,000 cards cost ₹3,600–₹5,500. Final pricing may vary depending on the paper GSM, matte or velvet lamination, spot UV, foil stamping, rounded corners, and other premium finishing options."
+},
+
+{
+    id: 41,
+    name: "Pink Elegance Luxury Hamper",
+    price: 1499,
+    category: "bouquets",
+    img: "bouquet9.jpg",
+    badge: "Luxury",
+    about: "A beautifully curated premium pink beauty hamper bouquet, packed elegantly to pamper her on birthdays or special occasions."
+},
+
+{
+    id: 42,
+    name: "Mini Eyes Frame",
+    price: 249,
+    category: "frames",
+    img: "frame8.jpeg",
+    badge: "Trending",
+    about: "Eyes speak what words cannot. This custom eyes frame transforms your favorite eye photograph into a stunning piece of art."
+},
+
+{
+    id: 43,
+    name: "Birthday Magazine",
+    price: 599,
+    category: "magazines",
+    img: "magazine8.jpg",
+    badge: "Vintage",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 44,
+    name: "Personalized Handmade Photo card",
+    price: 699,
+    category: "handcrafted",
+    img: "greeting card10.jpg",
+    badge: "Gift Special",
+    about: "An elegant handcrafted greeting card detailed with subtle ribbon accents, adding extra luxury to your personalized message."
+},
+
+{
+    id: 45,
+    name: "Personalized Wedding Invitation Card",
+    price: 399,
+    category: "cards",
+    img: "cards10.jpg",
+    badge: "Luxury",
+    about: "Our Basic Design Editing service starts at ₹500–₹800, while Premium Custom Design with personalized photo illustration, custom wedding theme, premium typography, and decorative elements ranges from ₹1,000–₹2,000. Printing charges vary based on the quantity and material selected. 100 invitation cards cost approximately ₹1,500–₹2,500, 200 cards cost ₹2,800–₹4,500, 500 cards cost ₹6,500–₹10,000, and 1,000 cards cost ₹12,000–₹18,000. Final pricing may vary depending on paper GSM, textured or premium cardstock, matte or velvet lamination, foil printing, embossing, UV coating, and other luxury finishing options."
+},
+
+{
+    id: 46,
+    name: "Aesthetic Magazine",
+    price: 599,
+    category: "magazines",
+    img: "magazine9.jpg",
+    badge: "Popular",
+    about: "Our A4 Size Magazine starts from ₹599, while the A5 Size Magazine starts from ₹499. We also offer custom-sized magazines tailored to your requirements. All magazines include a fully personalized design, premium-quality color printing, a custom cover, and a JPG & PDF preview before printing.additional revisions are charged at ₹99 per edit. Extra pages, major customizations, premium paper, special finishes (Gloss/Matte/Lamination), express delivery, and courier charges apply based on your requirements.Looking for a custom size or a unique design?** Feel free to **DM us** with your requirements—we'd love to create something special just for you!Note: Prices mentioned are starting rates and may vary depending on the size, page count, customization, printing options, and delivery location."
+},
+
+{
+    id: 47,
+    name: "Premium Handcrafted Birthday Card",
+    price: 449,
+    category: "handcrafted",
+    img: "greeting card9.jpg",
+    badge: "Handmade",
+    about: "A beautifully detailed handcrafted card that can be fully personalized with your own custom quotes and photo designs."
+},
+
+{
+    id: 48,
+    name: "Traditional Maharashtrian Wedding Invitation Card",
+    price: 399,
+    category: "cards",
+    img: "cards9.jpg",
+    badge: "Premium",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hrs) costs ₹199, extra revisions are ₹99 each, and the editable source file (PSD/AI) is ₹399.Printing starts at ₹999 for 25 cards, ₹1,799 for 50, ₹3,199 for 100, and ₹5,999 for 200. All packages include 300 GSM premium matte cardstock, front & back color printing, and a high-quality print finish. Prices may vary based on paper type, quantity, size, and finishing options."
+},
+
+{
+    id: 49,
+    name: "Ruby Glam Luxury Hamper Bouquet",
+    price: 1399,
+    category: "bouquets",
+    img: "bouquet10.jpg",
+    badge: "Luxury",
+    about: "A magnificent hamper bouquet featuring luxury accessories, premium wrapping, and treats, perfect for high-end surprises."
+},
+
+{
+    id: 50,
+    name: "Vintage Heirloom Walnut Frame",
+    price: 649,
+    category: "frames",
+    img: "frame9.jpg",
+    badge: "Classic",
+    about: "A vintage-inspired premium walnut wood frame made meticulously to securely preserve your cherished nostalgic memories."
+},
+{
+    id: 51,
+    name: "Elegant Floral Wedding Invitation",
+    price: 399,
+    category: "cards",
+    img: "cards11.jpg",
+    badge: "Luxury",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hrs) costs ₹199, extra revisions are ₹99 each, and the editable source file (PSD/AI) is ₹399.Starts at ₹999 for 25 cards, ₹1,799 for 50, ₹3,199 for 100, and ₹5,999 for 200. Includes 300 GSM premium matte cardstock, front & back color printing, and a high-quality print finish. Prices may vary based on paper type, quantity, size, and finishing options."
+},
+
+{
+    id: 52,
+    name: "Luxury Trifold Floral Wedding Invitation ",
+    price: 699,
+    category: "cards",
+    img: "cards12.jpg",
+    badge: "Premium",
+    about: "Our Digital Design starts at ₹699 (JPG & PDF), while the Premium Customized Design is available for ₹999 with complete personalization. Express Delivery (24 hrs) is available for ₹299, extra revisions for ₹99 each, and the editable source file (PSD/AI) for ₹499.Starts at ₹1,499 for 25 cards, ₹2,799 for 50, ₹4,999 for 100, and ₹9,499 for 200. Includes 300 GSM premium matte cardstock, high-quality trifold finishing, full-color printing, and precision folding. Prices may vary based on paper type, size, quantity, and premium finishing options."
+},
+
+{
+    id: 53,
+    name: "Premium Gate Fold Wedding Invitation",
+    price: 799,
+    category: "cards",
+    img: "cards13.jpg",
+    badge: "Elegant",
+    about: "Our Digital Design starts at ₹799 (JPG & PDF), while the Premium Customized Design is available for ₹1,099 with complete personalization. Express Delivery (24 hrs) is available for ₹299, extra revisions are ₹99 each, and the editable source file (PSD/AI) is ₹499.Starts at ₹1,699 for 25 cards, ₹3,199 for 50, ₹5,999 for 100, and ₹11,499 for 200. Includes 300 GSM premium matte cardstock, gate fold finishing, full-color high-quality printing, and precision folding. Prices may vary depending on the paper type, quantity, size, and finishing options."
+},
+
+{
+    id: 54,
+    name: "Traditional Temple Wedding Invitation",
+    price: 349,
+    category: "cards",
+    img: "cards14.jpg",
+    badge: "Trending",
+    about: "Our Digital Design starts at ₹349 (JPG & PDF), while the Premium Customized Design is available for ₹549 with full personalization. Express Delivery (24 hrs) is available for ₹199, extra revisions are ₹99 each, and the editable source file (PSD/AI) is ₹399.Starts at ₹899 for 25 cards, ₹1,699 for 50, ₹2,999 for 100, and ₹5,699 for 200. Includes 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary based on paper type, quantity, size, and finishing options."
+},
+
+{
+    id: 55,
+    name: "Traditional Wedding Event Invitation Set",
+    price: 999,
+    category: "cards",
+    img: "cards15.jpg",
+    badge: "Luxury",
+    about: "A beautifully designed 5-card wedding invitation set featuring separate invitations for Mehndi, Haldi, Sangeet, Wedding, and the Main Invitation.Our Digital Design Set starts at ₹999 (5 editable invitation designs in JPG & PDF), while the Premium Customized Set is available for ₹1,499 with complete personalization. Express Delivery (24 hrs) is available for ₹399, extra revisions are ₹99 each, and the editable source files (PSD/AI) are available for ₹799.Starts at ₹1,999 for 25 sets, ₹3,799 for 50 sets, ₹6,999 for 100 sets, and ₹13,499 for 200 sets. Includes 300 GSM premium matte cardstock, full-color printing, and a premium print finish. Printing charges may vary based on paper type, quantity, size, and finishing options."
+},
+
+{
+    id: 56,
+    name: "Marathi Floral Wedding Invitation",
+    price: 399,
+    category: "cards",
+    img: "cards16.jpg",
+    badge: "Premium",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hrs) is available for ₹199, extra revisions are ₹99 each, and the editable source file (PSD/AI) is ₹399.Starts at ₹999 for 25 cards, ₹1,799 for 50, ₹3,199 for 100, and ₹5,999 for 200. Includes 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary based on paper type, quantity, size, and finishing options."
+},
+
+{
+    id: 57,
+    name: "Floral Marathi Wedding Invitation Card",
+    price: 399,
+    category: "cards",
+    img: "cards17.jpg",
+    badge: "Popular",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 58,
+    name: "Traditional Marathi Wedding Invitation Card",
+    price: 399,
+    category: "cards",
+    img: "cards18.jpg",
+    badge: "Luxury",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 59,
+    name: "Wedding Program Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards19.jpg",
+    badge: "Trending",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 60,
+    name: "Royal Marathi Wedding Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards20.jpg",
+    badge: "Premium",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 61,
+    name: "Elegant Black & Gold Birthday Invitation Card",
+    price: 399,
+    category: "cards",
+    img: "cards21.jpg",
+    badge: "Elegant",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 62,
+    name: "Elegant Floral 60th Birthday Invitation Card",
+    price: 399,
+    category: "cards",
+    img: "cards22.jpg",
+    badge: "Luxury",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 63,
+    name: "Minimal Floral 60th Birthday Invitation Card",
+    price: 299,
+    category: "cards",
+    img: "cards23.jpg",
+    badge: "Premium",
+    about: "Printed invitation packages start at ₹999 for 25 cards. Includes 300 GSM premium matte cardstock, high-quality full-color printing, and a premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 64,
+    name: "Traditional Satyanarayan Mahapuja Invitation Card",
+    price: 399,
+    category: "cards",
+    img: "cards24.jpg",
+    badge: "Trending",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 65,
+    name: "Traditional Griha Pravesh & Vastu Shanti Invitation Card",
+    price: 399,
+    category: "cards",
+    img: "cards25.jpg",
+    badge: "Luxury",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 66,
+    name: "Premium Vastu Shanti & Griha Pravesh Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards26.jpg",
+    badge: "Popular",
+    about: "Our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 67,
+    name: "Royal Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards27.jpg",
+    badge: "Elegant",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 68,
+    name: "Royal Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards28.jpg",
+    badge: "Premium",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 69,
+    name: "Royal Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards29.jpg",
+    badge: "Luxury",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 70,
+    name: "Royal Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards30.jpg",
+    badge: "Trending",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 71,
+    name: "Royal Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards31.jpg",
+    badge: "Premium",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 72,
+    name: "Royal Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards32.jpg",
+    badge: "Elegant",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 73,
+    name: "Royal Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards33.jpg",
+    badge: "Luxury",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 74,
+    name: "Royal Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards34.jpg",
+    badge: "Popular",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+
+{
+    id: 75,
+    name: "Royal Invitation Card ",
+    price: 399,
+    category: "cards",
+    img: "cards35.jpg",
+    badge: "Luxury",
+    about: "our Digital Design starts at ₹399 (JPG & PDF), while the Premium Customized Design is available for ₹599 with full personalization. Express Delivery (24 hours) is available for ₹199, additional revisions cost ₹99 each, and the editable source file (PSD/AI) is available for ₹399. Printed invitation packages start at ₹999 for 25 cards, ₹1,799 for 50 cards, ₹3,199 for 100 cards, and ₹5,999 for 200 cards. All packages include 300 GSM premium matte cardstock, full-color printing, and a high-quality premium finish. Printing charges may vary depending on the paper type, card size, quantity, and finishing options."
+},
+{
+    id: 76,
+    name: "Aesthetic Accessories Gift Box",
+    price: 799,
+    category: "handcrafted",
+    img: "greeting card22.jpg",
+    badge: "Handmade",
+    about: "A beautifully handcrafted gift box filled with aesthetic accessories, perfect for gifting on special occasions."
+},
+
+{
+    id: 77,
+    name: "Personalized Mini Scrapbook Photo Album",
+    price: 699,
+    category: "handcrafted",
+    img: "greeting card11.jpg",
+    badge: "Gift Special",
+    about: "A beautifully handcrafted greeting card designed to make every occasion extra memorable."
+},
+
+{
+    id: 78,
+    name: "Personalized Pull-Out Photo Greeting Card",
+    price: 399,
+    category: "handcrafted",
+    img: "greeting card12.jpg",
+    badge: "Popular",
+    about: "A charming handmade greeting card perfect for sharing heartfelt wishes and messages."
+},
+
+{
+    id: 79,
+    name: "Personalized Memory Gift Box",
+    price: 1199,
+    category: "handcrafted",
+    img: "greeting card13.jpg",
+    badge: "Trending",
+    about: "A delightful birthday hamper thoughtfully arranged with personalized gifting elements and surprises."
+},
+
+{
+    id: 80,
+    name: "Personalized Birthday Surprise Gift Box",
+    price: 899,
+    category: "handcrafted",
+    img: "greeting card14.jpg",
+    badge: "Popular",
+    about: "A charming birthday gift box filled with personalized surprises and handcrafted details, perfect for making birthdays extra special."
+},
+
+{
+    id: 81,
+    name: "Personalized Birthday Keepsake Gift Box",
+    price: 1199,
+    category: "handcrafted",
+    img: "greeting card15.jpg",
+    badge: "Premium",
+    about: "A premium birthday gift box designed to create lasting memories, featuring personalized keepsakes and handcrafted elements."
+},
+
+{
+    id: 82,
+    name: "Personalized Beauty & Self-Care Gift Box",
+    price: 1499,
+    category: "handcrafted",
+    img: "greeting card16.jpg",
+    badge: "Luxury",
+    about: "A premium gift hamper designed to pamper and delight, featuring high-quality beauty and self-care products."
+},
+
+{
+    id: 83,
+    name: "Premium Oxidised Jewellery Gift Box",
+    price: 1499,
+    category: "handcrafted",
+    img: "greeting card17.jpg",
+    badge: "Unique",
+    about: "A handcrafted gift box featuring premium oxidized jewelry, perfect for gifting on special occasions and celebrations."
+},
+
+{
+    id: 84,
+    name: "Lavender Love Gift Hamper",
+    price: 799,
+    category: "handcrafted",
+    img: "greeting card18.jpg",
+    badge: "Trending",
+    about: "A purple-themed hamper designed to create memorable gifting moments with a creative touch."
+},
+
+{
+    id: 85,
+    name: "Black Velvet Coco Box",
+    price: 399,
+    category: "handcrafted",
+    img: "greeting card19.jpg",
+    badge: "Luxury",
+    about: "A premium velvet chocolate gift box perfect for birthdays, anniversaries, and celebrations."
+},
+
+{
+    id: 86,
+    name: "Birthday Memory Surprise Box",
+    price: 549,
+    category: "handcrafted",
+    img: "greeting card20.jpg",
+    badge: "Bestseller",
+    about: "A handcrafted keepsake box designed to preserve your most precious memories and photographs."
+},
+
+{
+    id: 87,
+    name: "Best Sister Memory Gift Hamper",
+    price: 799,
+    category: "handcrafted",
+    img: "greeting card21.jpg",
+    badge: "Gift Special",
+    about: "A creative hamper featuring memorable photographs and personalized gifting elements."
+},
+
+{
+    id: 88,
+    name: "Pretty Pink Bouquet",
+    price: 799,
+    category: "bouquets",
+    img: "bouquet11.jpg",
+    badge: "Trending",
+    about: "A beautiful bouquet of pink flowers, perfect for expressing love and affection.**📌 Note:**The items/products used inside the bouquet (such as chocolates, perfumes, cosmetics, toys, gifts, etc.) must be provided by the customer. The mentioned price is **only for the flower arrangement and bouquet wrapping**. Any additional products supplied by the customer will be arranged beautifully inside the bouquet at no extra design cost (unless otherwise specified)."
+},
+
+{
+    id: 89,
+    name: "Glam Goddess Bouquet",
+    price: 899,
+    category: "bouquets",
+    img: "bouquet12.jpg",
+    badge: "Premium",
+    about: "A stunning bouquet that embodies elegance and glamour, perfect for making a lasting impression.**📌 Note:**The items/products used inside the bouquet (such as chocolates, perfumes, cosmetics, toys, gifts, etc.) must be provided by the customer. The mentioned price is **only for the flower arrangement and bouquet wrapping**. Any additional products supplied by the customer will be arranged beautifully inside the bouquet at no extra design cost (unless otherwise specified)."
+},
+
+{
+    id: 90,
+    name: "Midnight Glam Bouquet",
+    price: 799,
+    category: "bouquets",
+    img: "bouquet13.jpg",
+    badge: "Luxury",
+    about: "A magnificent hamper bouquet featuring luxury accessories, premium wrapping, and treats.**📌 Note:**The items/products used inside the bouquet (such as chocolates, perfumes, cosmetics, toys, gifts, etc.) must be provided by the customer. The mentioned price is **only for the flower arrangement and bouquet wrapping**. Any additional products supplied by the customer will be arranged beautifully inside the bouquet at no extra design cost (unless otherwise specified)."
+},
+
+{
+    id: 91,
+    name: "Midnight Snack Surprise Bouquet",
+    price: 699,
+    category: "bouquets",
+    img: "bouquet14.jpg",
+    badge: "Bestseller",
+    about: "A unique snack bouquet filled with chocolates, chips, roses, and elegant wrapping.**📌 Note:**The items/products used inside the bouquet (such as chocolates, perfumes, cosmetics, toys, gifts, etc.) must be provided by the customer. The mentioned price is **only for the flower arrangement and bouquet wrapping**. Any additional products supplied by the customer will be arranged beautifully inside the bouquet at no extra design cost (unless otherwise specified)."
+},
+
+{
+    id: 92,
+    name: "Pastel Snack Delight Bouquet",
+    price: 699,
+    category: "bouquets",
+    img: "bouquet15.jpg",
+    badge: "Popular",
+    about: "A beautiful snack bouquet with chocolates, chips, flowers, and premium pastel wrapping.**📌 Note:**The items/products used inside the bouquet (such as chocolates, perfumes, cosmetics, toys, gifts, etc.) must be provided by the customer. The mentioned price is **only for the flower arrangement and bouquet wrapping**. Any additional products supplied by the customer will be arranged beautifully inside the bouquet at no extra design cost (unless otherwise specified)."
+},
+
+{
+    id: 93,
+    name: "Classic Lays Love Bouquet",
+    price: 349,
+    category: "bouquets",
+    img: "bouquet16.jpg",
+    badge: "Budget Friendly",
+    about: "A fun and affordable snack bouquet featuring favorite Lays packets with elegant wrapping.**📌 Note:**The items/products used inside the bouquet (such as chocolates, perfumes, cosmetics, toys, gifts, etc.) must be provided by the customer. The mentioned price is **only for the flower arrangement and bouquet wrapping**. Any additional products supplied by the customer will be arranged beautifully inside the bouquet at no extra design cost (unless otherwise specified)."
+},
+
+{
+    id: 94,
+    name: "Royal Chocolate Fantasy Bouquet",
+    price: 699,
+    category: "bouquets",
+    img: "bouquet17.jpg",
+    badge: "Chocolate Special",
+    about: "A classy chocolate bouquet featuring premium chocolates and luxurious black-gold wrapping."
+},
+
+{
+    id: 95,
+    name: "Blooming Butterfly Bouquet",
+    price: 699,
+    category: "bouquets",
+    img: "bouquet18.jpg",
+    badge: "Trending",
+    about: "A premium bouquet featuring colorful butterflies, fresh flowers, and luxury wrapping."
+},
+
+{
+    id: 96,
+    name: "Pastel Acrylic Flower Bouquet",
+    price: 699,
+    category: "bouquets",
+    img: "bouquet19.jpg",
+    badge: "Unique",
+    about: "A handcrafted acrylic flower bouquet designed as a long-lasting keepsake gift."
+},
+
+{
+    id: 97,
+    name: "Floral Portrait Bouquet",
+    price: 499,
+    category: "bouquets",
+    img: "bouquet20.jpg",
+    badge: "Customizable",
+    about: "A personalized bouquet featuring a custom portrait card and beautiful floral decorations."
+},
+
+{
+    id: 98,
+    name: "Luxury Jewelry Gift Bouquet",
+    price: 1299,
+    category: "bouquets",
+    img: "bouquet21.jpg",
+    badge: "Luxury",
+    about: "A premium gift bouquet featuring elegant jewelry accessories and luxury wrapping."
+},
+
+{
+    id: 99,
+    name: "🧸 Teddy Bear Bouquet",
+    price: 599,
+    category: "bouquets",
+    img: "bouquet22.jpg",
+    badge: "Cute Gift",
+    about: "A charming teddy bear bouquet wrapped beautifully for birthdays and surprise gifting."
+},
+
+{
+    id: 100,
+    name: "🧸🌹 Premium Teddy Rose Bouquet",
+    price: 1199,
+    category: "bouquets",
+    img: "bouquet23.jpg",
+    badge: "Premium",
+    about: "A luxury teddy and rose bouquet crafted to create unforgettable gifting moments."
+},
+{
+    id: 101,
+    name: "🧸✨ Luxury Teddy Message Bouquet",
+    price: 1299,
+    category: "bouquets",
+    img: "bouquet24.jpg",
+    badge: "Luxury",
+    about: "A luxury teddy bouquet featuring a soft plush teddy, personalized message card, elegant greenery, and premium wrapping."
+},
+
+{
+    id: 102,
+    name: "Baby Teddy Bear Bouquet",
+    price: 1399,
+    category: "bouquets",
+    img: "bouquet25.jpg",
+    badge: "Bestseller",
+    about: "A premium teddy bouquet designed with a soft teddy, decorative accents, and luxury wrapping for unforgettable gifting."
+},
+
+{
+    id: 103,
+    name: "Customized Polaroid Photo Pull-Out Card",
+    price: 179,
+    category: "handcrafted",
+    img: "polorid.jpg",
+    badge: "Trending",
+    about: "Premium quality customized polaroid prints designed to preserve your favorite memories in a timeless style."
+},
+
+{
+    id: 104,
+    name: "Personalized Photo Gifts",
+    price: 149,
+    category: "handcrafted",
+    img: "polorid 6.jpg",
+    badge: "Popular",
+    about: "A stylish collection of customized polaroid prints perfect for gifting and room decoration.₹30 per photo print."
+},
+
+{
+    id: 105,
+    name: "Polaroid Fairy Lights Photo Kit",
+    price: 549,
+    category: "handcrafted",
+    img: "polaroid light kit.jpg",
+    badge: "Bestseller",
+    about: "A creative photo light kit that transforms your memories into aesthetic room décor."
+},
+
+{
+    id: 106,
+    name: "Polaroid 6P Photo Set keychain",
+    price: 499,
+    category: "handcrafted",
+    img: "poloroid 6p.jpg",
+    badge: "Trending",
+    about: "A unique keychain featuring a set of 6 personalized polaroid photos, perfect for carrying your cherished memories wherever you go."
+},
+
+{
+    id: 107,
+    name: "Polaroid Album",
+    price: 499,
+    category: "handcrafted",
+    img: "poloroid aulbum.jpg",
+    badge: "Premium",
+    about: "A premium polaroid photo album designed to store and showcase your favorite memories in a stylish and organized manner."
+},
+
+{
+    id: 108,
+    name: "Vintage Heirloom Walnut Frame",
+    price: 1199,
+    category: "frames",
+    img: "frame10.jpg",
+    badge: "Classic",
+    about: "A vintage-inspired premium walnut wood frame made meticulously to securely preserve your cherished nostalgic memories."
+},
+
+{
+    id: 109,
+    name: "Vintage Heirloom Walnut Frame",
+    price: 599,
+    category: "frames",
+    img: "frame11.jpg",
+    badge: "Luxury",
+    about: "A premium handcrafted walnut frame featuring elegant detailing and timeless craftsmanship."
+},
+
+{
+    id: 110,
+    name: "Vintage Heirloom Walnut Frame",
+    price: 549,
+    category: "frames",
+    img: "frame12.jpg",
+    badge: "Popular",
+    about: "A beautiful wooden frame designed to showcase your treasured moments with elegance."
+},
+
+{
+    id: 111,
+    name: "Friendship Collage Frame",
+    price: 399,
+    category: "frames",
+    img: "frame13.jpg",
+    badge: "Bestseller",
+    about: "Celebrate your most cherished friendship memories with this beautifully customized photo collage frame."
+},
+
+{
+    id: 112,
+    name: "Forever Memory Frame",
+    price: 349,
+    category: "frames",
+    img: "frame14.jpg",
+    badge: "Gift Special",
+    about: "A personalized friendship frame designed to capture unforgettable moments and memories."
+},
+
+{
+    id: 113,
+    name: "👀 11:11 Wish Eyes Frame",
+    price: 499,
+    category: "frames",
+    img: "frame15.jpg",
+    badge: "Trending",
+    about: "A unique personalized eyes frame designed to symbolize love, connection, and special wishes."
+},
+
+{
+    id: 114,
+    name: "🚗 Crimson Speed Birthday 3D Frame",
+    price: 1299,
+    category: "frames",
+    img: "frame16.jpg",
+    badge: "Premium",
+    about: "A handcrafted 3D sports car frame designed for car lovers and memorable celebrations."
+},
+
+{
+    id: 115,
+    name: "🚗 Hot Wheels Speed Legend 3D Frame",
+    price: 1299,
+    category: "frames",
+    img: "frame17.jpg",
+    badge: "Trending",
+    about: "A Hot Wheels-inspired 3D frame featuring a miniature sports car and racing-themed design."
+},
+
+{
+    id: 116,
+    name: "🚗 Lamborghini Dream Drive 3D Frame",
+    price: 1299,
+    category: "frames",
+    img: "frame18.jpg",
+    badge: "Luxury",
+    about: "A premium Lamborghini-inspired 3D frame crafted for automotive enthusiasts and collectors."
+},
+
+{
+    id: 117,
+    name: "A5 Premium Batman 3D Shadow Box Frame",
+    price: 999,
+    category: "frames",
+    img: "frame19.jpg",
+    badge: "Collector's Pick",
+    about: "A premium Batman-themed 3D shadow box frame featuring a detailed Batmobile and iconic design."
+},
+
+{
+    id: 118,
+    name: "Customized Mini Square Photo Frame",
+    price: 249,
+    category: "frames",
+    img: "frame20.jpg",
+    badge: "Customizable",
+    about: "A compact personalized photo frame perfect for portraits, illustrations, and meaningful quotes."
+},
+
+{
+    id: 119,
+    name: "Anniversary Date Highlight Photo Frame",
+    price: 349,
+    category: "frames",
+    img: "frame21.jpg",
+    badge: "Romantic",
+    about: "A stylish photo frame designed to highlight your most memorable anniversary dates and moments."
+},
+
+{
+    id: 120,
+    name: "Personalized Save The Date Calendar Frame",
+    price: 499,
+    category: "frames",
+    img: "frame22.jpg",
+    badge: "Popular",
+    about: "A beautiful calendar-style frame created to celebrate and remember your special day."
+},
+
+{
+    id: 121,
+    name: "Infinity Heart Collage Photo Frame",
+    price: 449,
+    category: "frames",
+    img: "frame23.jpg",
+    badge: "Trending",
+    about: "A heart-shaped collage frame featuring multiple treasured photos arranged beautifully."
+},
+
+{
+    id: 122,
+    name: "Music Player Photo Frame",
+    price: 499,
+    category: "frames",
+    img: "frame24.jpg",
+    badge: "Bestseller",
+    about: "A Spotify-inspired music player frame that combines photos and favorite songs into one gift."
+},
+
+{
+    id: 123,
+    name: "Personalized Music Player Photo Frame",
+    price: 549,
+    category: "frames",
+    img: "frame25.jpg",
+    badge: "Premium",
+    about: "A fully customized Spotify-style frame featuring your photo, song title, and special memories."
+},
+
+{
+    id: 124,
+    name: "Google Search Style Birthday Frame",
+    price: 449,
+    category: "frames",
+    img: "frame26.jpg",
+    badge: "Unique",
+    about: "A creative birthday frame designed like a Google search page with memorable photo highlights."
+},
+
+{
+    id: 125,
+    name: "A4 Custom Frame with Spotify QR Code",
+    price: 499,
+    category: "frames",
+    img: "frame27.jpg",
+    badge: "Trending",
+    about: "A premium custom frame featuring memorable photos, quotes, and a scannable Spotify QR code."
+},
+
+{
+    id: 126,
+    name: "Polaroid-Style Photo Collage Frame",
+    price: 499,
+    category: "frames",
+    img: "frame28.jpg",
+    badge: "Popular",
+    about: "A stylish collage frame featuring multiple polaroid-style photographs arranged elegantly."
+},
+
+{
+    id: 127,
+    name: "Aesthetic Memory Collage Frame",
+    price: 449,
+    category: "frames",
+    img: "frame29.jpg",
+    badge: "Aesthetic",
+    about: "A customized collage frame designed with photos, quotes, stickers, and creative decorations."
+},
+
+{
+    id: 128,
+    name: "Combo Frame",
+    price: 999,
+    category: "frames",
+    img: "frame30.jpg",
+    badge: "Premium Combo",
+    about: "A special combo frame set including personalized messages, memorable photographs, and beautiful keepsakes."
+},
+{
+    id: 129,
+    name: "Ruby Romance Bouquet",
+    price: 899,
+    category: "Artificial",
+    img: "A1.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 130,
+    name: "Blush Pink Lily Bouquet",
+    price: 799,
+    category: "Artificial",
+    img: "A2.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 131,
+    name: "Mini Pink Tulip  Bouquet",
+    price: 249,
+    category: "Artificial",
+    img: "A3.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 132,
+    name: "Lavender Bloom Mini Bouquet",
+    price: 299,
+    category: "Artificial",
+    img: "A4.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+
+{
+    id: 133,
+    name: "Purple Twin Tulip Mini Bouquet",
+    price: 349,
+    category: "Artificial",
+    img: "A5.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+
+{
+    id: 134,
+    name: "Royal Red TulipBouquet",
+    price: 399,
+    category: "Artificial",
+    img: "A6.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch....🌷 Pipe Cleaner Bouquet Pricing Guide = Our Pipe Cleaner Bouquets are priced based on the number of flowers and the overall design. Single Flower Bouquets start from ₹199–₹249, while 2 Flower Bouquets are available from ₹299–₹349. 3 Flower Bouquets start at ₹399–₹499, and 5 Flower Bouquets range between ₹599–₹799. For larger arrangements, 7–8 Flower Bouquets are priced from ₹899–₹1,099, and our Premium 10+ Flower Bouquets start from ₹1,199–₹1,699. Final pricing may vary depending on the flower design, bouquet size, wrapping style, and customization requested by the customer. 🌸"
+},
+
+{
+    id: 135,
+    name: "Sweet Heart Tulip Mini Bouquet",
+    price: 299,
+    category: "Artificial",
+    img: "A7.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+
+{
+    id: 136,
+    name: "Blush Lily Bouquet",
+    price: 449,
+    category: "Artificial",
+    img: "A8.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+
+{
+    id: 137,
+    name: "Sunshine Sunflower Bouquet",
+    price: 599,
+    category: "Artificial",
+    img: "A9.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+
+{
+    id: 138,
+    name: "Pink Blossom Tulip Bouquet",
+    price: 549,
+    category: "Artificial",
+    img: "A10.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+
+{
+    id: 139,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A11.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+
+{
+    id: 140,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A12.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+
+{
+    id: 141,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A13.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 142,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A14.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 143,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A15.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 144,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A16.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 145,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A17.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 146,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A18.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 147,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A19.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 148,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A20.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 149,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A21.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 150,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A22.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 151,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A23.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 152,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A24.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 153,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A25.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 154,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A26.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 155,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A27.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 156,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A28.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 157,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A29.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 158,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A30.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 159,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A31.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 160,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A32.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 161,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A33.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 162,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A34.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 163,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A35.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+{
+    id: 164,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A36.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},{
+    id: 165,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A37.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},{
+    id: 166,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A38.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},{
+    id: 167,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A39.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},{
+    id: 168,
+    name: "Blush Lily Bouquet",
+    price: 999,
+    category: "Artificial",
+    img: "A40.jpg",
+    badge: "Handmade",
+    about: "A luxurious artificial bouquet featuring premium red roses, elegant wrapping, and a romantic touch."
+},
+ ];
+
+        let cart = [];
+
+        // ✅ BUG FIX 3: renderProducts मध्ये image, badge, आणि viewProduct click add केले
+        function renderProducts(productsList) {
+            const grid = document.getElementById('product-grid');
+            if (!grid) return;
+
+            if (productsList.length === 0) {
+                grid.innerHTML = '<p class="col-span-full text-center text-charcoal/50 py-12">No products found in this category.</p>';
+                return;
+            }
+
+            grid.innerHTML = productsList.map(p => `
+                <div class="premium-product-card" onclick="viewProduct(${p.id})">
+                    <div class="premium-card-image-wrapper">
+                        ${p.badge ? `<span class="premium-card-badge">${p.badge}</span>` : ''}
+                        <img
+                            src="${p.img}"
+                            alt="${p.name}"
+                            class="premium-card-image"
+                            onerror="this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=400&auto=format&fit=crop'"
+                        >
+                    </div>
+                    <div class="p-3 md:p-4 space-y-2">
+                        <h3 class="font-serif text-sm md:text-base text-charcoal font-semibold leading-snug">${p.name}</h3>
+                        <p class="text-dustyRose font-bold text-sm md:text-base">₹${Number(p.price).toFixed(2)}</p>
+                        <button
+                            onclick="event.stopPropagation(); addToCart(${p.id})"
+                            class="w-full border border-charcoal text-charcoal hover:bg-charcoal hover:text-cream py-2 rounded text-[10px] uppercase tracking-widest font-semibold transition mt-1">
+                            <i class="fa-solid fa-bag-shopping mr-1"></i> Add to Bag
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ✅ Filtering System
+        function filterCategory(cat, event) {
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-charcoal', 'text-cream');
+                btn.classList.add('border-beige', 'bg-cream');
+            });
+            event.target.classList.remove('border-beige', 'bg-cream');
+            event.target.classList.add('bg-charcoal', 'text-cream');
+
+            const filtered = cat === 'all' ? products : products.filter(p => p.category === cat);
+            renderProducts(filtered);
+        }
+
+        // ✅ Cart Toggle
+        function toggleCart() {
+            const sidebar = document.getElementById('cart-sidebar');
+            sidebar.classList.toggle('translate-x-full');
+        }
+
+        // ✅ Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // ✅ Add to Cart
+        function addToCart(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+            const exists = cart.find(item => item.id === id);
+            if (exists) {
+                exists.quantity += 1;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+            updateCart();
+            document.getElementById('cart-sidebar').classList.remove('translate-x-full');
+        }
+
+        // ✅ BUG FIX 4: updateCart मध्ये price Number म्हणून handle केले
+        function updateCart() {
+            const count = cart.reduce((acc, item) => acc + item.quantity, 0);
+            document.getElementById('cart-count').innerText = count;
+
+            const itemsContainer = document.getElementById('cart-items');
+            if (cart.length === 0) {
+                itemsContainer.innerHTML = '<p class="text-sm text-charcoal/50 text-center py-8">Your cart is empty.</p>';
+            } else {
+                itemsContainer.innerHTML = cart.map(item => `
+                    <div class="flex items-center justify-between border-b border-beige pb-3">
+                        <div class="flex items-center space-x-3">
+                            <img src="${item.img}" class="w-12 h-12 object-cover rounded"
+                                onerror="this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=400&auto=format&fit=crop'"/>
+                            <div>
+                                <h4 class="font-serif text-xs text-charcoal font-semibold">${item.name}</h4>
+                                <p class="text-xs text-charcoal/60">₹${Number(item.price).toFixed(2)} x ${item.quantity}</p>
+                            </div>
+                        </div>
+                        <button onclick="removeFromCart(${item.id})" class="text-xs text-red-400 hover:underline">Remove</button>
+                    </div>
+                `).join('');
+            }
+
+            const total = cart.reduce((acc, item) => acc + (Number(item.price) * item.quantity), 0);
+            document.getElementById('cart-total').innerText = `₹${total.toFixed(2)}`;
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(item => item.id !== id);
+            updateCart();
+        }
+
+        // ✅ Checkout via EmailJS
+       function checkoutOrder() {
+            if (cart.length === 0) {
+                alert("Your cart is empty.");
+                return;
+            }
+
+            const customerName = document.getElementById("customer-name").value.trim();
+            const customerPhone = document.getElementById("customer-phone").value.trim();
+            const customerAddress = document.getElementById("customer-address").value.trim();
+
+            if (!customerName || !customerPhone || !customerAddress) {
+                alert("Please enter Name, Mobile Number and Address.");
+                return;
+            }
+
+            if (!window.emailjs) {
+                alert("Checkout service is not loaded. Please check your internet connection and try again.");
+                return;
+            }
+
+            const mode = document.getElementById("payment-method").value;
+            const totalAmount = cart.reduce((acc, item) => acc + (Number(item.price) * item.quantity), 0);
+            const itemsList = cart.map(item => `${item.name} (Qty: ${item.quantity}) - \u20B9${(Number(item.price) * item.quantity).toFixed(2)}`).join("\n");
+            const orderId = "MC" + Date.now();
+
+            const emailParams = {
+                from_name: customerName,
+                message: `NEW ORDER RECEIVED\n\nOrder ID: ${orderId}\n\nCustomer Name:\n${customerName}\n\nMobile:\n${customerPhone}\n\nAddress:\n${customerAddress}\n\nOrder Details:\n${itemsList}\n\nTotal Amount:\n\u20B9${totalAmount.toFixed(2)}\n\nPayment Mode:\n${mode}`
+            };
+
+            const resetOrderForm = () => {
+                cart = [];
+                updateCart();
+                document.getElementById("customer-name").value = "";
+                document.getElementById("customer-phone").value = "";
+                document.getElementById("customer-address").value = "";
+                toggleCart();
+            };
+
+            emailjs.send("gmail", "template_6o3sgj9", emailParams)
+                .then(() => {
+                    alert(`Order Placed Successfully!\n\nOrder ID: ${orderId}\n\nThank you for choosing Mansi Creation`);
+                    resetOrderForm();
+                })
+                .catch(() => {
+                    emailjs.send("default_service", "template_6o3sgj9", emailParams)
+                        .then(() => {
+                            alert(`Order Placed Successfully!\n\nOrder ID: ${orderId}\n\nThank you for choosing Mansi Creation`);
+                            resetOrderForm();
+                        })
+                        .catch(err => {
+                            console.error(err);
+                            alert("Order Failed.\n\nPlease try again.");
+                        });
+                });
+        }
+
+        // Product Modal
+        function viewProduct(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+
+            document.getElementById("modal-img").src = product.img;
+            document.getElementById("modal-name").innerText = product.name;
+            document.getElementById("modal-price").innerText = "₹" + Number(product.price).toFixed(2);
+            document.getElementById("modal-about").innerText = product.about || "Beautiful handcrafted gift made with premium quality materials.";
+
+            document.getElementById("modal-cart-btn").onclick = () => { addToCart(product.id); closeProduct(); };
+            document.getElementById("modal-buy-btn").onclick = () => { addToCart(product.id); closeProduct(); };
+
+            const msg = `Hello Mansi Creation, I want to order:\n\n📌 *Product:* ${product.name}\n💰 *Price:* ₹${Number(product.price).toFixed(2)}\n\nPlease share details for further process.`;
+            document.getElementById("modal-whatsapp-btn").href = `https://wa.me/917028755897?text=${encodeURIComponent(msg)}`;
+
+            const modal = document.getElementById("product-modal");
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+            setTimeout(() => {
+                modal.classList.add("opacity-100");
+                modal.querySelector('.max-w-3xl').classList.remove("scale-95");
+                modal.querySelector('.max-w-3xl').classList.add("scale-100");
+            }, 10);
+        }
+
+        function closeProduct() {
+            const modal = document.getElementById("product-modal");
+            modal.classList.remove("opacity-100");
+            modal.querySelector('.max-w-3xl').classList.remove("scale-100");
+            modal.querySelector('.max-w-3xl').classList.add("scale-95");
+            setTimeout(() => {
+                modal.classList.add("hidden");
+                modal.classList.remove("flex");
+            }, 300);
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("product-modal");
+            if (event.target === modal) closeProduct();
+        };
+
+        // ✅ Scroll Reveal Animation
+        function revealElements() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add("active");
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+        }
+        // Initialize on load
+        function initPage() {
+            renderProducts(products);
+            revealElements();
+            document.querySelectorAll(".reveal").forEach(el => el.classList.add("active"));
+        }
+
+        if (document.readyState === "loading") {
+            document.addEventListener('DOMContentLoaded', initPage);
+        } else {
+            initPage();
+        }
+    </script>
+</body>
+</html>
